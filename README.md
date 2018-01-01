@@ -1,6 +1,6 @@
 # Belmod
-A smart contract system that generates smart contracts using the Rosette Language and Z3.
-NOTE THIS SYSTEM IS A RESEARCH PROTOTYPE. USE AT YOUR OWN PERIL.
+A smart contract system that generates smart contracts using the Rosette Language and targets pyramid (a lisp) and Javascript.
+
 
 ## Getting Started
 

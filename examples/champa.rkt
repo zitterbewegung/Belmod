@@ -75,7 +75,7 @@
 (define (withdraw-bid-priority address priority)
   (delete-at! (book-bids (priority-book priority))
               address))
-             
+
 ; Transaction must deposit the difference between user's previous bid and this one.
 (define (on-bid bidder priority amount)
   (let* ((book        (priority-book priority))
@@ -83,7 +83,7 @@
     (assert-deposit amount)
     (book-bid! book bidder amount)
     (withdraw! bidder current-bid)))
-    
+
 (define (on-ask bidder amount)
   (let* ((book (priority-book priority)))
     (book-ask! book bidder amount)))
@@ -107,7 +107,7 @@
 (define (add-duke! target)
   (log1 target EVENT-ADD-DUKE)
   (push dukes target))
-  
+
 (define (add-baron! target)
   (log1 target EVENT-ADD-BARON)
   (push barons target))
@@ -191,5 +191,3 @@
           (book-pop-ask! book)
           ((book-on-match book) bid ask))
         (void))))
-
-    

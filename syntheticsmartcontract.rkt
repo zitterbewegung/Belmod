@@ -8,7 +8,8 @@
 (define-symbolic x y integer?)
 (define-symbolic able-to-trade-trigger boolean?)
 
-(current-bitwidth 256) #Setting current bitwidth to 256 
+(current-bitwidth 256) 
+;Setting current bitwidth to 256 
 ;Create a set of conditions where we are able to trade
 ; And a buy and sell price are satisified
 (define angelic-bitcoin-solution

@@ -1,4 +1,4 @@
-;KAMI
+;Gas price from pyramid scheme.
 
 (include "psl.pmd")
 
